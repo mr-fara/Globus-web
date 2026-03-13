@@ -41,7 +41,11 @@ const Navbar = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="text-2xl font-bold text-blue-600"
         >
-          Globus
+        <img
+          src="/image/g logo.png"
+          alt="Globus Logo"
+          className="h-6 w-auto object-contain"
+        />
         </button>
 
         {/* Desktop Menu */}

@@ -16,26 +16,31 @@ const items = [
     icon: Briefcase,
     title: "How globus work",
     text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
+    Desc: "Globus is a comprehensive platform designed to streamline communication and collaboration for teams. It offers a suite of tools that facilitate structured workflows, automate routine tasks, and provide insights through analytics. With Globus, teams can coordinate their efforts more effectively, ensuring that projects are completed efficiently and on time. The platform's user-friendly interface and robust features make it an essential tool for any team looking to enhance their productivity and communication."
   },
   {
     icon: HelpCircle,
     title: "What is Globus",
     text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
+    Desc: "Globus is a cutting-edge communication and collaboration platform designed to help teams work more efficiently. It provides a structured operating surface where teams can plan, execute, and track their communication workflows with transparency and speed. With features like automation, analytics, and team coordination tools, Globus enables teams to streamline their processes and achieve better results in less time."
   },
   {
     icon: Wallet,
     title: "Earning Methods",
     text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
+    Desc: "Globus offers various earning methods for users, including referral programs, subscription plans, and premium features. Users can earn rewards by referring new members to the platform, subscribing to advanced features, or participating in special promotions. The platform is designed to incentivize engagement and provide value to its users while fostering a collaborative community."
   },
   {
     icon: UserPlus,
     title: "How to Join With Us",
     text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
+    Desc: "Joining Globus is easy and straightforward. Simply visit our website and click on the 'Sign Up' button. You can create an account using your email address or sign up with your Google or Facebook account for added convenience. Once you've registered, you can start exploring the platform's features and connect with other users to enhance your communication and collaboration experience."
   },
   {
     icon: Target,
     title: "Vision and Mission",
     text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
+    Desc: "Globus's vision is to revolutionize the way teams communicate and collaborate by providing a seamless, efficient, and transparent platform. Our mission is to empower teams with the tools they need to streamline their workflows, enhance productivity, and achieve their goals with confidence. We are committed to fostering a collaborative environment where businesses can scale confidently while maintaining a smooth and consistent customer experience."
   },
 ];
 
@@ -77,9 +82,7 @@ function AccordionItem({ item, open, setOpen, index }) {
 
       {open === index && (
         <div className="mt-4 text-sm text-gray-600 pl-14 leading-relaxed">
-          This section can contain more detailed explanation about "{item.title}".
-          It expands smoothly to maintain a clean and modern interface for
-          users exploring Globus information.
+          {item.Desc}
         </div>
       )}
     </div>
