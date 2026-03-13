@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className="w-full flex justify-center mt-18 md:mt-18 px-4">
       <div
-        className="relative w-full max-w-[1320px] h-[420px] md:h-[500px] lg:h-[550px] rounded-3xl overflow-hidden flex items-center"
+        className="relative w-full max-w-[1320px] h-[420px] md:h-[500px] lg:h-[550px] rounded-3xl overflow-hidden flex items-end pb-10"
         style={{
           backgroundImage: "url('/image/background.jpg')",
           backgroundSize: "cover",
