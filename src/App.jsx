@@ -1,0 +1,33 @@
+import { useState } from 'react'
+import Navbar from './components/sections/Navbar'
+import Hero from './components/sections/Hero'
+import About from './components/sections/About'
+import Branches from './components/sections/Branches'
+import Product from './components/sections/Product'
+import Intro from './components/sections/Intro'
+import Testimonials from './components/sections/Testimonials'
+import Contact from './components/sections/Contact'
+import Footer from './components/sections/Footer'
+
+function App() {
+
+  return (
+      <div>
+        <Navbar/>
+
+        <main>
+        <Hero/>
+        <About/>
+        <Branches/>
+        <Product/>
+        <Intro/>
+        <Testimonials/>
+        <Contact/>
+        </main>
+
+        <Footer/>
+      </div>
+  )
+}
+
+export default App
