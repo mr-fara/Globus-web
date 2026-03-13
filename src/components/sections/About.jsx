@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import FadeIn from '../animations/FadeIn';
-
-
+import FadeIn from "../animations/FadeIn";
 
 //////////////////// COUNTER ////////////////////
 
@@ -33,7 +31,7 @@ const Counter = ({ target, suffix = "", duration = 5000 }) => {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -91,50 +89,52 @@ const About = () => {
         {/* LEFT SIDE */}
 
         <div className="text-center md:text-left">
-              <FadeIn delay={0}>
-          <h2
-            className="
+          <FadeIn delay={0}>
+            <h2
+              className="
               text-2xl
               sm:text-3xl
               md:text-4xl
               font-bold
               mb-4
             "
-          >
-            About Globus<span className="text-blue-600"></span>
-          </h2>
-            </FadeIn>
-            <FadeIn delay={100}>
-          <p
-            className="
+            >
+              About Globus<span className="text-blue-600"></span>
+            </h2>
+          </FadeIn>
+          <FadeIn delay={100}>
+            <p
+              className="
               text-gray-700
               mb-4
               leading-relaxed
               text-sm
               sm:text-base
+              text-justify
             "
-          >
-            Globus helps teams run communication workflows with structure,
-            transparency, and speed. From outreach planning to daily execution,
-            every step is visible in one clean operating surface.
-          </p>
-          <p
-            className="
+            >
+              Globus helps teams run communication workflows with structure,
+              transparency, and speed. From outreach planning to daily
+              execution, every step is visible in one clean operating surface.
+            </p>
+            <p
+              className="
               text-gray-700
               leading-relaxed
               text-sm
               sm:text-base
+              text-justify
             "
-          >
-            We combine automation, analytics, and team coordination tools so
-            businesses can scale confidently while keeping customer experience
-            smooth and consistent.
-          </p>
-            </FadeIn>
+            >
+              We combine automation, analytics, and team coordination tools so
+              businesses can scale confidently while keeping customer experience
+              smooth and consistent.
+            </p>
+          </FadeIn>
         </div>
 
         {/* RIGHT SIDE STATS */}
-        
+
         <div
           className="
             grid
@@ -145,7 +145,6 @@ const About = () => {
             text-center
           "
         >
-            
           <div>
             <Counter target={1200} suffix="+" />
             <p className="text-gray-700 font-bold mt-1 text-sm sm:text-base">
@@ -174,7 +173,6 @@ const About = () => {
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );
