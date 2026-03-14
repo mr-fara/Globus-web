@@ -152,7 +152,7 @@ const Branches = () => {
           </p>
             </FadeIn>
               <FadeIn delay={100}>
-          <div className="mt-4 text-lg font-semibold">
+          <div className="mt-4 text-lg font-semibold mt-6">
             Total Branches :{" "}
             <Counter target={18} suffix="+" />
           </div>
@@ -175,14 +175,14 @@ const Branches = () => {
 
                 <div
                   key={i}
-                  className="w-full h-76 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
+                  className="w-full h-83 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
                 >
 
                   <div className="bg-white rounded-xl shadow overflow-hidden">
 
                     <img
                       src={b.img}
-                      className="w-full h-52 object-cover"
+                      className="w-120 h-70 rounded-2xl"
                     />
 
                     <div className="p-3">

@@ -24,9 +24,11 @@ const Footer = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-12 mb-12'>
                 <FadeIn delay={0}>
                     <div>
-                        <h3 className='text-3xl font-bold bg-linear-to-r from-primary/80 via-primary to-primary/80 bg-clip-text text-transparent mb-4'>
-                            {PERSONAL_INFO.name.split(' ')[0]}
-                        </h3>
+                        <img
+                        src="/image/g logo.png"
+                        alt="Globus Logo"
+                        className="h-14 w-auto object-contain mb-6"
+                        />
                         <p className='text-black/70 text-sm mb-6 leading-relaxed'>
                           {PERSONAL_INFO.tagline} 
                         </p>
@@ -39,7 +41,7 @@ const Footer = () => {
                                 <div className='p-2 bg-black/10 rounded-lg border border-primary/20'>
                                     <Mail className='w-4 h-4 text-black' />
                                 </div>
-                                <span className='text-black/70 text-sm group-hover:text-primary trasnition-colors'>
+                                <span className='text-black/70 text-sm group-hover:text-blue-600 transition-colors'>
                                     {PERSONAL_INFO.email}
                                 </span>
                             </a>
