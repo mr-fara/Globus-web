@@ -58,7 +58,7 @@ const Contact = () => {
               Let's Work Together
             </h2>
             <p className="text-black/60 max-w-2xl mx-auto">
-              Have a project in mind? Let's discuss how we can bring your ideas to life.
+              Join hands with GLOBUS and unlock new business opportunities. Connect with us, grow your income, and move by step towards achieving your millionaire and billionaire dreams.
             </p>
           </div>
         </FadeIn>
@@ -93,7 +93,7 @@ const Contact = () => {
                         value={formData[field]}
                         onChange={handleChange}
                         rows={5}
-                        placeholder="Tell me about your project..."
+                        placeholder="Tell us what you think in your mind..."
                         className="w-full px-4 py-3 bg-black/5 border border-black/10 rounded-xl text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
                       />
                     )}

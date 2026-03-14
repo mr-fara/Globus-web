@@ -31,10 +31,10 @@ const Testimonials = () => {
   };
 
   const testimonialStats = [
-    { value: "3x", label: "Faster Delivery" },
-    { value: "95%", label: "Client Satisfaction" },
-    { value: "100%", label: "On-Time Delivery" },
-    { value: "5★", label: "Average Rating" },
+    { value: "100% Setisfaction", label: "The Best Business Community" },
+    { value: "The best Opportunity", label: "Life time Business Knowledge" },
+    { value: "100% Correct Way to Business", label: "Free Consultation for businesses growth" },
+    { value: "100% Success", label: "The Best Way to Success" },
   ];
 
   return (
@@ -56,11 +56,11 @@ const Testimonials = () => {
             </h2>
 
             <h2 className="text-4xl md:text-4xl font-bold text-gray-900 mb-4">
-              Trusted by forward-thinking teams
+              Trusted by Community Teams Members
             </h2>
 
             <p className="text-gray-500 max-w-xl mx-auto">
-              Empowering clients with design-driven, high-quality solutions.
+              Success stories are being created every day. GLOBUS community members are reaching new milestones, building strong businesses, and turning their dreams into reality.
             </p>
           </div>
         </FadeIn>
@@ -91,7 +91,7 @@ const Testimonials = () => {
                             className="w-full h-full object-cover transition duration-500 hover:scale-105"
                           />
 
-                          <div className="absolute bottom-4 left-4 right-4 bg-black/50 text-white rounded-xl p-4">
+                          <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white backdrop-blur-sm rounded-xl p-4">
                             <div className="text-lg font-semibold">
                               {testimonialStats[index]?.value}
                             </div>
@@ -146,14 +146,14 @@ const Testimonials = () => {
             {/* Navigation Buttons */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/15 shadow-md w-12 h-12 border border-black/20 rounded-full flex items-center justify-center hover:bg-blue-100 transition"
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/10 shadow-md w-12 h-12 backdrop-blur-sm border border-black/20 rounded-full flex items-center justify-center hover:bg-blue-100 transition"
             >
               <ChevronLeft />
             </button>
 
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/15 shadow-md w-12 h-12 border border-black/20 rounded-full flex items-center justify-center hover:bg-blue-100 transition"
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/10 shadow-md w-12 h-12 backdrop-blur-sm border border-black/20 rounded-full flex items-center justify-center hover:bg-blue-100 transition"
             >
               <ChevronRight />
             </button>
