@@ -54,12 +54,12 @@ const branches = [
   {
     name: "Easten",
     place: "South Easten, Srilanka",
-    img: "/image/branch 01.jpeg",
+    img: "/image/branch 05.jpeg",
   },
   {
     name: "Easten",
     place: "South Easten, Srilanka",
-    img: "/image/branch 02.jpeg",
+    img: "/image/branch 06.jpeg",
   },
   {
     name: "Easten",

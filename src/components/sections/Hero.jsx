@@ -35,16 +35,14 @@ const Hero = () => {
           {/* Subtitle */}
            
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 md:mb-8">
-            Explore the Globus
+            Talent. Business. Opportunity.
           </h2>
            </FadeIn>
 
           {/* Description */}
               <FadeIn delay={100}>
           <p className="text-sm sm:text-base md:text-lg text-white/90 font-semibold leading-relaxed mb-6 md:mb-8">
-            Launch faster with a clear control center for support,
-            outreach, and analytics. Built for teams that need
-            elegant operations at scale.
+            Globus is a platform that connects people, ideas, and business opportunities into one ecosystem.
           </p>
               </FadeIn>
 

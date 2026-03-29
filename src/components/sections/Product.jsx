@@ -51,11 +51,13 @@ const products = [
     id: 1,
     img: "/image/product1.jpeg",
     title:
-      "Omnichannel routing and automation for customer engagement at scale.",
+      "A nourishing and vibrant lipstick made with natural strawberry extracts, designed to give your lips a soft, smooth, and radiant finish.",
     benefits: [
-      "Keep operations under one smart dashboard",
-      "Automate customer workflows",
-      "Monitor engagement analytics",
+      "Enriched with natural strawberry essence",
+      "Keeps lips moisturized and soft",
+      "Made with skin-friendly, natural ingredients",
+      "Smooth application with long-lasting color",
+      "Helps protect lips from dryness and dullness",
     ],
     price: 650,
     featured: true,
@@ -64,11 +66,13 @@ const products = [
     id: 2,
     img: "/image/product3.jpeg",
     title:
-      "Omnichannel routing and automation for customer engagement at scale.",
+      "A premium blend of natural oils formulated to strengthen hair, promote healthy growth, and improve overall scalp health.",
     benefits: [
-      "Unified communication channels",
-      "Smart routing automation",
-      "Real‑time performance tracking",
+      "Promotes healthy hair growth",
+      "Strengthens hair from roots to tips",
+      "Adds natural shine and smoothness",
+      "Nourishes and hydrates the scalp",
+      "Helps reduce dandruff and dryness",
     ],
     price: 1200,
     featured: true,
@@ -84,7 +88,7 @@ const products = [
     id: 4,
     img: "/image/product4.jpeg",
     title:
-      "Sri-Lanka's premium exported quality Tea Powder",
+      "premium exported quality Tea Powder",
     price: 2600,
   },
   {

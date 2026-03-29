@@ -12,35 +12,59 @@ import {
 //////////////////// DATA ////////////////////
 
 const items = [
-  {
-    icon: Briefcase,
-    title: "How globus work",
-    text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
-    Desc: "Globus is a comprehensive platform designed to streamline communication and collaboration for teams. It offers a suite of tools that facilitate structured workflows, automate routine tasks, and provide insights through analytics. With Globus, teams can coordinate their efforts more effectively, ensuring that projects are completed efficiently and on time. The platform's user-friendly interface and robust features make it an essential tool for any team looking to enhance their productivity and communication."
-  },
+ {
+  icon: Briefcase,
+  title: "How globus work",
+  text: "Globus brings different participants of the business world into one connected network.",
+  Desc: (
+    <>
+      Manufacturers produce products.<br />
+      Partners distribute them.<br />
+      Entrepreneurs expand the network.<br /><br />
+      This structure creates a simple and organized flow of business activity.
+    </>
+  )
+},
   {
     icon: HelpCircle,
-    title: "What is Globus",
-    text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
-    Desc: "Globus is a cutting-edge communication and collaboration platform designed to help teams work more efficiently. It provides a structured operating surface where teams can plan, execute, and track their communication workflows with transparency and speed. With features like automation, analytics, and team coordination tools, Globus enables teams to streamline their processes and achieve better results in less time."
+    title: "Global Expansion",
+    text: "Globus aims to expand its ecosystem across different regions and connect partners internationally.",
+    Desc: "This creates a global network for business growth and opportunity."
   },
   {
     icon: Wallet,
     title: "Earning Methods",
-    text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
-    Desc: "Globus offers various earning methods for users, including referral programs, subscription plans, and premium features. Users can earn rewards by referring new members to the platform, subscribing to advanced features, or participating in special promotions. The platform is designed to incentivize engagement and provide value to its users while fostering a collaborative community."
-  },
+    text: "Within the Globus ecosystem, individuals can participate in various business activities such as:",
+    Desc: (
+    <>
+      Manufacturing.<br />
+      Distribution.<br />
+      Sales.<br />
+      Network development.<br />
+      Business collaboration
+    </>
+  )
+},
   {
     icon: UserPlus,
     title: "How to Join With Us",
-    text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
-    Desc: "Joining Globus is easy and straightforward. Simply visit our website and click on the 'Sign Up' button. You can create an account using your email address or sign up with your Google or Facebook account for added convenience. Once you've registered, you can start exploring the platform's features and connect with other users to enhance your communication and collaboration experience."
-  },
+    text: "Be part of a growing network that connects innovators, partners, and entrepreneurs.",
+    Desc: (
+    <>
+     1. Contact Our Team<br />
+     Reach out to us and express your interest in joining our ecosystem.<br /><br />
+     2. Book Your Interview<br />
+     Our team will schedule a quick discussion to understand your goals and how you fit in.<br /><br />
+     3. Unlock Your Opportunity<br />
+     Once approved, we’ll connect you with the right opportunities to grow and succeed.
+    </>
+  )
+},
   {
     icon: Target,
     title: "Vision and Mission",
-    text: "Leadership, local expertise, and trusted operational guidance for growing teams across Sri Lanka.",
-    Desc: "Globus's vision is to revolutionize the way teams communicate and collaborate by providing a seamless, efficient, and transparent platform. Our mission is to empower teams with the tools they need to streamline their workflows, enhance productivity, and achieve their goals with confidence. We are committed to fostering a collaborative environment where businesses can scale confidently while maintaining a smooth and consistent customer experience."
+    text: "Our Vision: To build a global ecosystem that connects talent, production, and business opportunities.",
+    Desc: "Our Mission: To support entrepreneurship and create sustainable business opportunities."
   },
 ];
 
@@ -100,14 +124,31 @@ export default function Intro() {
         {/* LEFT SIDE */}
         <FadeIn delay={0}>
             <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Director of Globus Sri Lanka
+            <h2 className="text-4xl md:text-4xl font-bold text-gray-900 mb-4">
+                Globus Sri Lanka
             </h2>
 
-            <p className="text-gray-600 max-w-md mb-8">
-                Leadership, local expertise, and trusted operational guidance for
-                growing teams across Sri Lanka.
+            <h3 className="text-1xl md:text-2xl font-bold text-gray-900 mb-4">
+                Mr. Sahi (Managing Director – Globus Sri Lanka)
+            </h3>
+
+            <p className="text-gray-600 max-w-md mb-6">
+              Mr. Sahi is a dynamic business leader and mentor, serving as the Managing Director of Globus Sri Lanka. 
+              With strong expertise in financial education, business development, and sales training, he plays a key role 
+              in building and expanding the Globus ecosystem.
             </p>
+
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">
+               Professional Roles
+              </h4>
+              <ul className="text-gray-600 space-y-2">
+                <li>• Managing Director – Globus Sri Lanka</li>
+                <li>• Financial Advisor</li>
+                <li>• Sales & Business Trainer</li>
+                <li>• Cashflow Game Trainer</li>
+              </ul>
+            </div>
 
             {/* DIRECTOR IMAGE */}
             <FadeIn delay={100}>

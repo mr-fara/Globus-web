@@ -12,7 +12,7 @@ const methods = [
   { title: "Manufacturing", icon: Factory },
   { title: "Distribution", icon: Truck },
   { title: "Sales", icon: ShoppingCart },
-  { title: "Networking", icon: Network },
+  { title: "E-Services", icon: Network },
   { title: "Collaboration", icon: Users },
   { title: "Entrepreneur", icon: Briefcase },
 ];

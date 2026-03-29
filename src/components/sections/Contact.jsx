@@ -52,13 +52,13 @@ const Contact = () => {
         <FadeIn>
           <div className="text-center mb-16">
             <h2 className=" text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Get In Touch
+              Call to Action
             </h2>
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-              Let's Work Together
+               Join Globus Today
             </h2>
             <p className="text-black/60 max-w-2xl mx-auto">
-              Join hands with GLOBUS and unlock new business opportunities. Connect with us, grow your income, and move by step towards achieving your millionaire and billionaire dreams.
+              Become part of the Globus ecosystem and explore new opportunities.
             </p>
           </div>
         </FadeIn>
@@ -127,7 +127,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-black mb-4">Let's Connect</h3>
                 <p className="text-black/80 leading-relaxed">
-                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
+                  We always open to discussing new Ideas, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
                 </p>
               </div>
 

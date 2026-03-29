@@ -35,6 +35,9 @@ const Testimonials = () => {
     { value: "The best Opportunity", label: "Life time Business Knowledge" },
     { value: "100% Correct Way to Business", label: "Free Consultation for businesses growth" },
     { value: "100% Success", label: "The Best Way to Success" },
+    { value: "100% Success", label: "The Best Way to Success" },
+    { value: "100% Success", label: "The Best Way to Success" },
+    { value: "100% Success", label: "The Best Way to Success" },
   ];
 
   return (
