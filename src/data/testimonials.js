@@ -69,4 +69,65 @@ export const testimonials = [
       "Globus creates a strong community where growth, support, and success go hand in hand.",
     rating: 5,
   },
+    {
+    id: 8,
+    name: "Mr. Afzal ",
+    role: "IPad Achiever",
+    company: "",
+    image: "/testimonials/person8.jpg",
+    quote:
+      "Being a partner in Globus helped me grow faster with the right support and opportunities.",
+    rating: 5,
+  },
+  {
+    id: 9,
+    name: "Mr.  Sujanthan",
+    role: "IPad Achiever",
+    company: "",
+    image: "/testimonials/person9.jpg",
+    quote:
+      "I love how Globus connects manufacturers and entrepreneurs in one place. It’s powerful.",
+    rating: 5,
+  },
+  {
+    id: 10,
+    name: "Mr. Aleem ",
+    role: "Bike Achiever",
+    company: "",
+    image: "/testimonials/person10.jpg",
+    quote:
+      "Globus gave me a clear path to start my business. The ecosystem makes everything simple and connected.",
+    rating: 5,
+  },
+  {
+    id: 11,
+    name: "Mr. Sajeewan ",
+    role: "MacBook Achiever",
+    company: "",
+    image: "/testimonials/person11.jpg",
+    quote:
+      "Globus is not just a platform, it’s a real business network where anyone can participate and succeed.",
+    rating: 5,
+  },
+  {
+    id: 12,
+    name: "Mr. Nathasi",
+    role: "Bike Achiever",
+    company: "",
+    image: "/testimonials/person12.jpg",
+    quote:
+      "The earning opportunities in Globus are flexible and easy to understand. Great for new entrepreneurs.",
+    rating: 5,
+  },
+  {
+    id: 13,
+    name: "Mr. Nathasi",
+    role: "Royal spot salon franchise owner",
+    company: "",
+    image: "/testimonials/person14.jpg",
+    quote:
+      "Through Globus, I found the right people and the right system to expand my business.",
+    rating: 5,
+  },
+ 
 ];
