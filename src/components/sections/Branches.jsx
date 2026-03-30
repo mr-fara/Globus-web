@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
+import BranchModal from "../ui/BranchModal";
+import { branches } from "../../data/branches";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import FadeIn from '../animations/FadeIn';
+import FadeIn from "../animations/FadeIn";
 
 //////////////// COUNTER //////////////////
 
@@ -32,7 +34,7 @@ const Counter = ({ target, suffix = "", duration = 2000 }) => {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -48,55 +50,11 @@ const Counter = ({ target, suffix = "", duration = 2000 }) => {
   );
 };
 
-//////////////// DATA //////////////////
-
-const branches = [
-  {
-    name: "Easten",
-    place: "South Easten, Srilanka",
-    img: "/image/branch 05.jpeg",
-  },
-  {
-    name: "Easten",
-    place: "South Easten, Srilanka",
-    img: "/image/branch 06.jpeg",
-  },
-  {
-    name: "Easten",
-    place: "South Easten, Srilanka",
-    img: "/image/branch 03.jpeg",
-  },
-  {
-    name: "Easten",
-    place: "South Easten, Srilanka",
-    img: "/image/branch 04.jpeg",
-  },
-  {
-    name: "Easten",
-    place: "South Easten, Srilanka",
-    img: "/image/branch 01.jpeg",
-  },
-  {
-    name: "Easten",
-    place: "South Easten, Srilanka",
-    img: "/image/branch 02.jpeg",
-  },
-  {
-    name: "Easten",
-    place: "South Easten, Srilanka",
-    img: "/image/branch 03.jpeg",
-  },
-  {
-    name: "Easten",
-    place: "South Easten, Srilanka",
-    img: "/image/branch 04.jpeg",
-  },
-];
-
 //////////////// COMPONENT //////////////////
 
 const Branches = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedBranch, setSelectedBranch] = useState(null);
   const scrollRef = useRef(null);
 
   const getCardsPerView = () => {
@@ -109,8 +67,7 @@ const Branches = () => {
     const container = scrollRef.current;
     if (!container) return;
 
-    const cardWidth =
-      container.offsetWidth / getCardsPerView();
+    const cardWidth = container.offsetWidth / getCardsPerView();
 
     container.scrollTo({
       left: cardWidth * index,
@@ -121,95 +78,86 @@ const Branches = () => {
   };
 
   const nextSlide = () => {
-    const max =
-      branches.length - getCardsPerView();
+    const max = branches.length - getCardsPerView();
 
-    scrollToIndex(
-      Math.min(currentIndex + 1, max)
-    );
+    scrollToIndex(Math.min(currentIndex + 1, max));
   };
 
   const prevSlide = () => {
-    scrollToIndex(
-      Math.max(currentIndex - 1, 0)
-    );
+    scrollToIndex(Math.max(currentIndex - 1, 0));
   };
 
   return (
-    <section id='branch' className="w-full py-28 px-4 flex justify-center">
+    <section id="branch" className="w-full py-28 px-4 flex justify-center">
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-4 gap-6">
-
         {/* LEFT SIDE */}
 
         <div className="md:col-span-1 text-center md:text-left">
-             <FadeIn delay={0}>
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">
-            Globus Branches
-          </h2>
+          <FadeIn delay={0}>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
+              Globus Branches
+            </h2>
 
-          <p className="text-gray-700 text-sm md:text-base">
-            In just 15 months, GLOBUS has grown rapidly, expanding our presence with multiple service branches across Sri Lanka. This remarkable journey reflects our strong commitment, trust, and customer satisfaction.
-          </p>
-            </FadeIn>
-              <FadeIn delay={100}>
-          <div className="mt-4 text-lg font-semibold mt-6">
-            Total Branches :{" "}
-            <Counter target={18} suffix="+" />
-          </div>
-            </FadeIn>
+            <p className="text-gray-700 text-sm md:text-base">
+              In just 15 months, GLOBUS has grown rapidly, expanding our
+              presence with multiple service branches across Sri Lanka. This
+              remarkable journey reflects our strong commitment, trust, and
+              customer satisfaction.
+            </p>
+          </FadeIn>
+          <FadeIn delay={100}>
+            <div className="mt-4 text-lg font-semibold mt-6">
+              Total Branches : <Counter target={18} suffix="+" />
+            </div>
+          </FadeIn>
         </div>
 
         {/* RIGHT SIDE */}
-            
+
         <div className="md:col-span-3 relative">
-
           {/* SLIDER */}
-            <FadeIn delay={200}>
-          <div
-            ref={scrollRef}
-            className="overflow-x-auto scroll-smooth snap-x snap-mandatory hide-scrollbar"
-          >
-            <div className="flex gap-4">
+          <FadeIn delay={200}>
+            <div
+              ref={scrollRef}
+              className="overflow-x-auto scroll-smooth snap-x snap-mandatory hide-scrollbar"
+            >
+              <div className="flex gap-4">
+                {branches.map((b, i) => (
+                  <div
+                    key={i}
+                    className="w-full h-105 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
+                  >
+                    <div className="bg-white rounded-xl shadow overflow-hidden">
+                      <img src={b.img} className="w-120 h-70 rounded-2xl" />
 
-              {branches.map((b, i) => (
+                      <div className="p-3 grid grid-cols-2">
+                        <div>
+                          <h3 className="text-blue-600 font-bold text-lg">
+                            {b.name}
+                          </h3>
 
-                <div
-                  key={i}
-                  className="w-full h-95 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
-                >
+                          <p className="text-sm text-gray-700">
+                            Sri-Lankan Branch
+                          </p>
 
-                  <div className="bg-white rounded-xl shadow overflow-hidden">
-
-                    <img
-                      src={b.img}
-                      className="w-120 h-70 rounded-2xl"
-                    />
-
-                    <div className="p-3">
-
-                      <h3 className="text-blue-600 font-bold text-lg">
-                        {b.name}
-                      </h3>
-
-                      <p className="text-sm text-gray-700">
-                        Sri-Lankan Branch
-                      </p>
-
-                      <p className="text-sm text-gray-700">
-                        {b.place}
-                      </p>
-
+                          <p className="text-sm text-gray-700">{b.place}</p>
+                        </div>
+                        {/* Button at bottom-right */}
+                        
+                          <button
+                            onClick={() => setSelectedBranch(b)}
+                            className="w-30 h-10 bottom-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-full text-sm cursor-pointer"
+                          >
+                            View Details
+                          </button>
+                        
+                      </div>
                     </div>
-
                   </div>
-
-                </div>
-
-              ))}
-
+                ))}
+              </div>
             </div>
-          </div>
-            </FadeIn>
+          </FadeIn>
           {/* ARROWS */}
 
           {branches.length > getCardsPerView() && (
@@ -234,14 +182,9 @@ const Branches = () => {
 
           {branches.length > getCardsPerView() && (
             <div className="flex items-center justify-center gap-2 mt-8">
-
               {Array.from({
-                length: Math.max(
-                  0,
-                  branches.length - getCardsPerView() + 1
-                ),
+                length: Math.max(0, branches.length - getCardsPerView() + 1),
               }).map((_, index) => (
-
                 <button
                   key={index}
                   onClick={() => scrollToIndex(index)}
@@ -251,15 +194,17 @@ const Branches = () => {
                       : "bg-gray-400 w-2 h-2"
                   }`}
                 />
-
               ))}
-
             </div>
           )}
-
         </div>
       </div>
 
+      {/* MODEL */}
+      <BranchModal
+        branch={selectedBranch}
+        onClose={() => setSelectedBranch(null)}
+      />
     </section>
   );
 };
