@@ -175,7 +175,7 @@ const Branches = () => {
 
                 <div
                   key={i}
-                  className="w-full h-83 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
+                  className="w-full h-95 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
                 >
 
                   <div className="bg-white rounded-xl shadow overflow-hidden">
