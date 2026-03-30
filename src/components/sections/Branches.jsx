@@ -50,7 +50,6 @@ const Counter = ({ target, suffix = "", duration = 2000 }) => {
   );
 };
 
-
 //////////////// COMPONENT //////////////////
 
 const Branches = () => {
@@ -126,22 +125,32 @@ const Branches = () => {
                 {branches.map((b, i) => (
                   <div
                     key={i}
-                    onClick={() => setSelectedBranch(b)}
-                    className="w-full h-95 sm:w-3xs lg:w-1/3 shrink-0 snap-start cursor-pointer"
+                    className="w-full h-105 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
                   >
                     <div className="bg-white rounded-xl shadow overflow-hidden">
                       <img src={b.img} className="w-120 h-70 rounded-2xl" />
 
-                      <div className="p-3">
-                        <h3 className="text-blue-600 font-bold text-lg">
-                          {b.name}
-                        </h3>
+                      <div className="p-3 grid grid-cols-2">
+                        <div>
+                          <h3 className="text-blue-600 font-bold text-lg">
+                            {b.name}
+                          </h3>
 
-                        <p className="text-sm text-gray-700">
-                          Sri-Lankan Branch
-                        </p>
+                          <p className="text-sm text-gray-700">
+                            Sri-Lankan Branch
+                          </p>
 
-                        <p className="text-sm text-gray-700">{b.place}</p>
+                          <p className="text-sm text-gray-700">{b.place}</p>
+                        </div>
+                        {/* Button at bottom-right */}
+                        
+                          <button
+                            onClick={() => setSelectedBranch(b)}
+                            className="w-30 h-10 bottom-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-full text-sm cursor-pointer"
+                          >
+                            View Details
+                          </button>
+                        
                       </div>
                     </div>
                   </div>
@@ -196,7 +205,6 @@ const Branches = () => {
         branch={selectedBranch}
         onClose={() => setSelectedBranch(null)}
       />
-
     </section>
   );
 };
