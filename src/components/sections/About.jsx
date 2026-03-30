@@ -65,7 +65,7 @@ const About = () => {
       className="
         w-full
         h-130
-        bg-gray-100
+       
         py-14
         sm:py-16
         md:py-20

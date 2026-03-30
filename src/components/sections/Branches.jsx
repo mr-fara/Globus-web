@@ -52,44 +52,44 @@ const Counter = ({ target, suffix = "", duration = 2000 }) => {
 
 const branches = [
   {
-    name: "Dubai",
-    place: "Business Bay, Dubai, UAE",
-    img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
+    name: "Easten",
+    place: "South Easten, Srilanka",
+    img: "/image/branch 05.jpeg",
   },
   {
-    name: "Saudi",
-    place: "Riyadh, Saudi Arabia",
-    img: "https://images.unsplash.com/photo-1607082350899-7e105aa886ae",
+    name: "Easten",
+    place: "South Easten, Srilanka",
+    img: "/image/branch 06.jpeg",
   },
   {
-    name: "Kuwait",
-    place: "Kuwait City",
-    img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36",
+    name: "Easten",
+    place: "South Easten, Srilanka",
+    img: "/image/branch 03.jpeg",
   },
   {
-    name: "Qatar",
-    place: "Doha, Qatar",
-    img: "https://images.unsplash.com/photo-1581091215367-59ab6b8f9c3e",
+    name: "Easten",
+    place: "South Easten, Srilanka",
+    img: "/image/branch 04.jpeg",
   },
   {
-    name: "Dubai",
-    place: "Business Bay, Dubai, UAE",
-    img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
+    name: "Easten",
+    place: "South Easten, Srilanka",
+    img: "/image/branch 01.jpeg",
   },
   {
-    name: "Saudi",
-    place: "Riyadh, Saudi Arabia",
-    img: "https://images.unsplash.com/photo-1607082350899-7e105aa886ae",
+    name: "Easten",
+    place: "South Easten, Srilanka",
+    img: "/image/branch 02.jpeg",
   },
   {
-    name: "Kuwait",
-    place: "Kuwait City",
-    img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36",
+    name: "Easten",
+    place: "South Easten, Srilanka",
+    img: "/image/branch 03.jpeg",
   },
   {
-    name: "Qatar",
-    place: "Doha, Qatar",
-    img: "https://images.unsplash.com/photo-1581091215367-59ab6b8f9c3e",
+    name: "Easten",
+    place: "South Easten, Srilanka",
+    img: "/image/branch 04.jpeg",
   },
 ];
 
@@ -148,12 +148,11 @@ const Branches = () => {
           </h2>
 
           <p className="text-gray-700 text-sm md:text-base">
-            The first column holds the section intro,
-            while the next columns show branch cards.
+            In just 15 months, GLOBUS has grown rapidly, expanding our presence with multiple service branches across Sri Lanka. This remarkable journey reflects our strong commitment, trust, and customer satisfaction.
           </p>
             </FadeIn>
               <FadeIn delay={100}>
-          <div className="mt-4 text-lg font-semibold">
+          <div className="mt-4 text-lg font-semibold mt-6">
             Total Branches :{" "}
             <Counter target={18} suffix="+" />
           </div>
@@ -176,14 +175,14 @@ const Branches = () => {
 
                 <div
                   key={i}
-                  className="w-full h-76 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
+                  className="w-full h-83 sm:w-3xs lg:w-1/3 shrink-0 snap-start"
                 >
 
                   <div className="bg-white rounded-xl shadow overflow-hidden">
 
                     <img
                       src={b.img}
-                      className="w-full h-52 object-cover"
+                      className="w-120 h-70 rounded-2xl"
                     />
 
                     <div className="p-3">
@@ -193,7 +192,7 @@ const Branches = () => {
                       </h3>
 
                       <p className="text-sm text-gray-700">
-                        Middle East Hub
+                        Sri-Lankan Branch
                       </p>
 
                       <p className="text-sm text-gray-700">

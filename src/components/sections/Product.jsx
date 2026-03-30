@@ -49,57 +49,61 @@ const PriceCounter = ({ value }) => {
 const products = [
   {
     id: 1,
-    img: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?q=80&w=1200",
+    img: "/image/product1.jpeg",
     title:
-      "Omnichannel routing and automation for customer engagement at scale.",
+      "A nourishing and vibrant lipstick made with natural strawberry extracts, designed to give your lips a soft, smooth, and radiant finish.",
     benefits: [
-      "Keep operations under one smart dashboard",
-      "Automate customer workflows",
-      "Monitor engagement analytics",
+      "Enriched with natural strawberry essence",
+      "Keeps lips moisturized and soft",
+      "Made with skin-friendly, natural ingredients",
+      "Smooth application with long-lasting color",
+      "Helps protect lips from dryness and dullness",
     ],
-    price: 60,
+    price: 650,
     featured: true,
   },
   {
     id: 2,
-    img: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200",
+    img: "/image/product3.jpeg",
     title:
-      "Omnichannel routing and automation for customer engagement at scale.",
+      "A premium blend of natural oils formulated to strengthen hair, promote healthy growth, and improve overall scalp health.",
     benefits: [
-      "Unified communication channels",
-      "Smart routing automation",
-      "Real‑time performance tracking",
+      "Promotes healthy hair growth",
+      "Strengthens hair from roots to tips",
+      "Adds natural shine and smoothness",
+      "Nourishes and hydrates the scalp",
+      "Helps reduce dandruff and dryness",
     ],
-    price: 60,
+    price: 1200,
     featured: true,
   },
   {
     id: 3,
-    img: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=1200",
+    img: "/image/product2.jpeg",
     title:
-      "Omnichannel routing and automation for customer engagement at scale.",
-    price: 60,
+      "The best Globus Lightning Lip Balm.",
+    price: 650,
   },
   {
     id: 4,
-    img: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=1200",
+    img: "/image/product4.jpeg",
     title:
-      "Omnichannel routing and automation for customer engagement at scale.",
-    price: 60,
+      "premium exported quality Tea Powder",
+    price: 2600,
   },
   {
     id: 5,
-    img: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1200",
+    img: "/image/product5.jpeg",
     title:
-      "Omnichannel routing and automation for customer engagement at scale.",
-    price: 60,
+      "High results GLOBUS Herbal hair growth oil.",
+    price: 990,
   },
   {
     id: 6,
-    img: "https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=1200",
+    img: "/image/product6.jpeg",
     title:
-      "Omnichannel routing and automation for customer engagement at scale.",
-    price: 60,
+      "Globus High sale Skin Glow Serum.",
+    price: 950,
   },
 ];
 
@@ -194,8 +198,7 @@ export default function Product() {
           </FadeIn>
             <FadeIn delay={100}>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-            Explore our core platforms designed to accelerate growth, improve
-            reliability, and manage operations through one smart dashboard.
+            GLOBUS proudly introduces its latest collection of cosmetics, Ayurvedic natural products, and wholesome food items all made with pure, 100% chemical-free ingredients to bring you beauty, wellness, and nutrition the natural way.
           </p>
           </FadeIn>
         </div>

@@ -52,13 +52,13 @@ const Contact = () => {
         <FadeIn>
           <div className="text-center mb-16">
             <h2 className=" text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Get In Touch
+              Call to Action
             </h2>
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-              Let's Work Together
+               Join Globus Today
             </h2>
             <p className="text-black/60 max-w-2xl mx-auto">
-              Have a project in mind? Let's discuss how we can bring your ideas to life.
+              Become part of the Globus ecosystem and explore new opportunities.
             </p>
           </div>
         </FadeIn>
@@ -93,7 +93,7 @@ const Contact = () => {
                         value={formData[field]}
                         onChange={handleChange}
                         rows={5}
-                        placeholder="Tell me about your project..."
+                        placeholder="Tell us what you think in your mind..."
                         className="w-full px-4 py-3 bg-black/5 border border-black/10 rounded-xl text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
                       />
                     )}
@@ -127,7 +127,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-black mb-4">Let's Connect</h3>
                 <p className="text-black/80 leading-relaxed">
-                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
+                  We always open to discussing new Ideas, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
                 </p>
               </div>
 

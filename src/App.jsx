@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Navbar from './components/sections/Navbar'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
@@ -9,6 +8,9 @@ import VideoReferences from './components/sections/VideoReferences'
 import Testimonials from './components/sections/Testimonials'
 import Contact from './components/sections/Contact'
 import Footer from './components/sections/Footer'
+import VideoReferences from './components/sections/VideoReferences'
+import BusinessEcosystem from './components/sections/BusinessEcosystem'
+import Earnings from './components/sections/Earnings'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
         <main>
         <Hero/>
         <About/>
+        <Earnings/>
+        <BusinessEcosystem/>
         <Branches/>
         <Product/>
         <Intro/>

@@ -1,4 +1,6 @@
 import React from "react";
+import FadeIn from '../animations/FadeIn';
+
 
 export default function VideoReferences() {
   return (
@@ -6,6 +8,7 @@ export default function VideoReferences() {
       <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-10 items-center">
 
         {/* LEFT COLUMN */}
+        <FadeIn delay={0}>
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Video References
@@ -17,8 +20,9 @@ export default function VideoReferences() {
             the concept clearly and learn how the platform works.
           </p>
         </div>
-
+        </FadeIn>
         {/* RIGHT COLUMN */}
+        <FadeIn delay={100}>
         <div className="grid grid-cols-3 gap-4">
 
           <button className="py-4 rounded-xl text-white font-semibold
@@ -40,7 +44,7 @@ export default function VideoReferences() {
           </button>
 
         </div>
-
+        </FadeIn>
       </div>
     </section>
   );
