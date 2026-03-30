@@ -105,6 +105,34 @@ const products = [
       "Globus High sale Skin Glow Serum.",
     price: 950,
   },
+  {
+    id: 5,
+    img: "/image/product5.jpeg",
+    title:
+      "High results GLOBUS Herbal hair growth oil.",
+    price: 990,
+  },
+  {
+    id: 6,
+    img: "/image/product6.jpeg",
+    title:
+      "Globus High sale Skin Glow Serum.",
+    price: 950,
+  },
+  {
+    id: 5,
+    img: "/image/product5.jpeg",
+    title:
+      "High results GLOBUS Herbal hair growth oil.",
+    price: 990,
+  },
+  {
+    id: 6,
+    img: "/image/product6.jpeg",
+    title:
+      "Globus High sale Skin Glow Serum.",
+    price: 950,
+  },
 ];
 
 //////////////////// FEATURED PRODUCT CARD ////////////////////
@@ -176,6 +204,8 @@ const ProductCard = ({ product }) => {
         </button>
       </div>
     </div>
+
+    
   );
 };
 
