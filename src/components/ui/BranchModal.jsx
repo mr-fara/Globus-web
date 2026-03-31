@@ -17,7 +17,7 @@ const BranchModal = ({ branch, onClose }) => {
         {/* CLOSE BUTTON */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 md:top-6 md:right-6 w-8 h-8 md:w-9 md:h-9 rounded-full bg-white/80 backdrop-blur flex items-center justify-center shadow-md z-10"
+          className="absolute top-4 right-4 md:top-6 md:right-6 w-8 h-8 md:w-9 md:h-9 rounded-full bg-white/80 flex items-center justify-center shadow-md z-10"
         >
           ✕
         </button>
@@ -39,11 +39,11 @@ const BranchModal = ({ branch, onClose }) => {
 
             mx-auto   /* 🔥 FIXED CENTER */
 
-            bg-white/80 backdrop-blur-xl
+            bg-white/90 backdrop-blur-xl
             border border-white/40
 
             rounded-3xl
-            shadow-[0_20px_60px_rgba(0,0,0,0.25)]
+           
 
             mb-6 md:mb-0   /* spacing from bottom mobile */
           "
@@ -76,7 +76,7 @@ const BranchModal = ({ branch, onClose }) => {
 
               {/* IMAGE */}
               <div className="relative flex-shrink-0">
-                <div className="w-[85px] md:w-[180px] aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden shadow-md md:shadow-lg border border-white/40">
+                <div className="w-[90px] md:w-[180px] aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden shadow-md md:shadow-lg border border-white/40">
                   <img
                     src={branch.ownerImg || "/image/default-user.png"}
                     alt="Owner"

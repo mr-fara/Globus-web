@@ -169,15 +169,15 @@ const Testimonials = () => {
             </button>
 
             {/* Dots */}
-            <div className="flex justify-center gap-3 mt-10">
+            <div className="flex justify-center gap-2 mt-10">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => scrollToIndex(index)}
                   className={`transition-all rounded-full ${
                     index === currentIndex
-                      ? "w-6 h-2 bg-blue-500"
-                      : "w-2 h-2 bg-gray-300"
+                      ? "w-5 h-1.5 bg-blue-500"
+                      : "w-1.5 h-1.5 bg-gray-300"
                   }`}
                 />
               ))}

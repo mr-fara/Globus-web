@@ -45,7 +45,7 @@ export const products = [
   {
     id: 4,
     img: "/image/product4.jpeg",
-    ownerImg: "/image/owner1.jpeg",
+    ownerImg: "/image/owner4.jpg",
     title: "Premium exported quality Tea Powder",
     benefits: ["Rich aroma", "High quality leaves", "Refreshing taste"],
     price: 2600,
