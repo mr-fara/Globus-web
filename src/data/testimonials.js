@@ -11,12 +11,12 @@ export const testimonials = [
   },
   {
     id: 2,
-    name: "Mr. Mahthee",
-    role: "MacBook Achiever",
-    company: "",
-    image: "/testimonials/person2.jpg",
+    name: "Mr. Farhath Zimal",
+    role: "lead Globus Software Unit",
+    company: "own a software agency.",
+    image: "/testimonials/person15.jpg",
     quote:
-      "I love how Globus connects manufacturers and entrepreneurs in one place. It’s powerful.",
+      "Being a partner in Globus has helped me move closer to my future goal of building my own software agency at the age of 22 by giving me valuable support & opportunities.",
     rating: 5,
   },
   {
@@ -121,6 +121,16 @@ export const testimonials = [
   },
   {
     id: 13,
+    name: "Mr. Mahthee",
+    role: "MacBook Achiever",
+    company: "",
+    image: "/testimonials/person2.jpg",
+    quote:
+      "Through Globus, I found the right people and the right system to expand my business.",
+    rating: 5,
+  },
+   {
+    id: 14,
     name: "Mr. Nathasi",
     role: "Royal spot salon franchise owner",
     company: "",

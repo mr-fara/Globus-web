@@ -150,10 +150,10 @@ const BranchModal = ({ branch, onClose }) => {
 
                 <div className="text-gray-700 text-[11px] md:text-sm space-y-1">
                   <p className="flex items-center gap-1 md:gap-2">
-                    <Calendar size={14} /> Mon - Fri
+                    <Calendar size={14} /> Mon - Sun
                   </p>
                   <p className="flex items-center gap-1 md:gap-2">
-                    <Clock size={14} /> 9:00 AM - 6:00 PM
+                    <Clock size={14} /> 9:00 AM - 8:00 PM
                   </p>
                 </div>
               </div>
