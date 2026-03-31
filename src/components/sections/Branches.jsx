@@ -107,7 +107,7 @@ const Branches = () => {
           </FadeIn>
           <FadeIn delay={100}>
             <div className="mt-4 text-lg font-semibold mt-6">
-              Total Branches : <Counter target={18} suffix="+" />
+              Total Branches : <Counter target={9} suffix="+" />
             </div>
           </FadeIn>
         </div>
