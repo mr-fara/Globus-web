@@ -46,7 +46,7 @@ const PriceCounter = ({ value }) => {
 
 const FeaturedCard = ({ product, onClick }) => {
   return (
-    <div className="group grid md:grid-cols-2 gap-6 bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+    <div className="group grid md:grid-cols-2 gap-6 bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
       
       <div className="overflow-hidden rounded-xl">
         <img
@@ -78,13 +78,13 @@ const FeaturedCard = ({ product, onClick }) => {
         </div>
 
         <div className="flex items-center justify-between mt-6">
-          <p className="text-blue-600 font-semibold text-lg">
+          <p className="text-black font-semibold text-lg">
             <PriceCounter value={product.price} />
           </p>
 
           <button
             onClick={() => onClick(product)}
-            className="flex items-center justify-center w-11 h-10 border rounded-lg hover:bg-gray-100 transition"
+            className="flex items-center justify-center w-11 h-10 border border-gray-300 rounded-xl hover:bg-gray-100 transition"
           >
             <ExternalLink size={18} />
           </button>
@@ -98,7 +98,7 @@ const FeaturedCard = ({ product, onClick }) => {
 
 const ProductCard = ({ product, onClick }) => {
   return (
-    <div className="group bg-white border border-gray-200 rounded-2xl p-4 hover:shadow-lg transition duration-300">
+    <div className="group bg-white border border-gray-100 rounded-2xl p-4 hover:shadow-lg transition duration-300">
       
       <div className="overflow-hidden rounded-xl mb-4">
         <img
@@ -113,13 +113,13 @@ const ProductCard = ({ product, onClick }) => {
       </p>
 
       <div className="flex items-center justify-between">
-        <p className="text-blue-600 font-semibold">
+        <p className="text-black font-semibold">
           <PriceCounter value={product.price} />
         </p>
 
         <button
           onClick={() => onClick(product)}
-          className="flex items-center justify-center w-9 h-9 border rounded-lg hover:bg-gray-100 transition"
+          className="flex items-center justify-center w-9 h-9 border border-gray-300 rounded-xl hover:bg-gray-100 transition"
         >
           <ExternalLink size={16} />
         </button>

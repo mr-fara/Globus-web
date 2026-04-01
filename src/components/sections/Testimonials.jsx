@@ -156,14 +156,14 @@ const Testimonials = () => {
             {/* Navigation Buttons */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/10 shadow-md w-12 h-12 backdrop-blur-sm border border-black/20 rounded-full flex items-center justify-center hover:bg-blue-100 transition"
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/5 shadow-md w-12 h-12 backdrop-blur-sm border border-black/5 rounded-full flex items-center justify-center hover:bg-blue-100 transition"
             >
               <ChevronLeft />
             </button>
 
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/10 shadow-md w-12 h-12 backdrop-blur-sm border border-black/20 rounded-full flex items-center justify-center hover:bg-blue-100 transition"
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/5 shadow-md w-12 h-12 backdrop-blur-sm border border-black/5 rounded-full flex items-center justify-center hover:bg-blue-100 transition"
             >
               <ChevronRight />
             </button>
@@ -176,7 +176,7 @@ const Testimonials = () => {
                   onClick={() => scrollToIndex(index)}
                   className={`transition-all rounded-full ${
                     index === currentIndex
-                      ? "w-5 h-1.5 bg-blue-500"
+                      ? "w-5 h-1.5 bg-black"
                       : "w-1.5 h-1.5 bg-gray-300"
                   }`}
                 />

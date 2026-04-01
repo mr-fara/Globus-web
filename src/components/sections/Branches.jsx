@@ -92,24 +92,56 @@ const Branches = () => {
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-4 gap-6">
         {/* LEFT SIDE */}
 
-        <div className="md:col-span-1 text-center md:text-left">
-          <FadeIn delay={0}>
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">
+        <div className="relative w-full bg-[#f5f5f7] rounded-[32px] p-10 md:p-16 text-center overflow-hidden border border-gray-200/50 shadow-[0_30px_80px_rgba(0,0,0,0.06)]">
+
+          {/* 🌌 Very Subtle Ambient Background */}
+          <div className="absolute -top-40 -left-40 w-[400px] h-[400px] bg-blue-400/10 blur-[140px] rounded-full" />
+          <div className="absolute -bottom-40 -right-40 w-[400px] h-[400px] bg-purple-400/10 blur-[140px] rounded-full" />
+
+          {/* Content */}
+          <div className="relative z-10">
+
+            {/* Title */}
+            <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
               Globus Branches
             </h2>
 
-            <p className="text-gray-700 text-sm md:text-base">
-              In just 15 months, GLOBUS has grown rapidly, expanding our
-              presence with multiple service branches across Sri Lanka. This
-              remarkable journey reflects our strong commitment, trust, and
-              customer satisfaction.
+            {/* Description */}
+            <p className="mt-6 text-gray-500 text-sm md:text-base max-w-3xl mx-auto leading-relaxed font-light">
+              Globus has rapidly expanded its presence across Sri Lanka, building a strong
+              network of service-based businesses. Each branch represents trust, quality,
+              and our commitment to empowering local entrepreneurs.
             </p>
-          </FadeIn>
-          <FadeIn delay={100}>
-            <div className="mt-4 text-lg font-semibold mt-6">
-              Total Branches : <Counter target={9} suffix="+" />
+
+            {/* Divider */}
+            <div className="w-16 h-[3px] bg-gray-400 mx-auto my-10" />
+
+            {/* Stats Section */}
+            <div className="grid grid-cols-2 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20">
+
+              {/* LEFT STAT */}
+              <div className="flex flex-col items-center">
+                <h3 className="text-6xl md:text-7xl font-semibold text-gray-900 tracking-tight">
+                  <Counter target={9} suffix="+" />
+                </h3>
+                <p className="text-xs md:text-sm text-gray-700 mt-3 uppercase tracking-[0.15em]">
+                  Active Branches
+                </p>
+              </div>
+
+              {/* RIGHT CONTENT */}
+              <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                <h4 className="text-1xl md:text-2xl font-medium text-gray-900 tracking-tight">
+                  Growing Across Sri Lanka
+                </h4>
+                <p className="text-sm md:text-base text-gray-600 mt-2 font-light">
+                  Expanding Every Month
+                </p>
+              </div>
+
             </div>
-          </FadeIn>
+
+          </div>
         </div>
 
         {/* RIGHT SIDE */}
@@ -132,7 +164,7 @@ const Branches = () => {
 
                       <div className="flex items-center justify-between p-4">
                         <div>
-                          <h3 className="text-blue-600 font-bold text-lg">
+                          <h3 className="text-gray-800 font-bold text-lg">
                             {b.name}
                           </h3>
 
@@ -142,7 +174,7 @@ const Branches = () => {
                         <div className="flex items-center justify-center ">
                           <button
                             onClick={() => setSelectedBranch(b)}
-                            className=" w-30 h-10  bg-blue-600 text-white px-3 py-1 rounded-full text-sm cursor-pointer"
+                            className=" w-30 h-10  bg-gray-950 text-white px-3 py-1 rounded-full text-sm cursor-pointer"
                           >
                             View Details
                           </button>
@@ -179,7 +211,7 @@ const Branches = () => {
           {/* ✅ NAVIGATION DOTS */}
 
           {branches.length > getCardsPerView() && (
-            <div className="flex items-center justify-center gap-2 mt-8">
+            <div className="flex items-center justify-center gap-2 mt-0">
               {Array.from({
                 length: Math.max(0, branches.length - getCardsPerView() + 1),
               }).map((_, index) => (
@@ -188,7 +220,7 @@ const Branches = () => {
                   onClick={() => scrollToIndex(index)}
                   className={`transition-all duration-300 rounded-full ${
                     index === currentIndex
-                      ? "bg-blue-600 w-6 h-1.5"
+                      ? "bg-black w-6 h-1.5"
                       : "bg-gray-400 w-1.5 h-1"
                   }`}
                 />
