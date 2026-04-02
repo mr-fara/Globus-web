@@ -10,6 +10,7 @@ import Contact from './components/sections/Contact'
 import Footer from './components/sections/Footer'
 import BusinessEcosystem from './components/sections/BusinessEcosystem'
 import Earnings from './components/sections/Earnings'
+import AdvertisementBannerPage from './components/sections/AdvertisementBannerPage'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <main>
         <Hero/>
         <About/>
+        <AdvertisementBannerPage/>
         <Earnings/>
         <BusinessEcosystem/>
         <Branches/>
