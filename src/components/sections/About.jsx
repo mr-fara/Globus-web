@@ -67,7 +67,7 @@ const About = () => {
   const bg2 = useTransform(scrollY, [0, 600], [0, -40]);
 
   return (
-    <section className="relative w-full py-12 px-4 flex justify-center bg-[#f5f5f7] overflow-hidden">
+    <section id="about" className="relative w-full py-12 px-4 flex justify-center bg-[#f5f5f7] overflow-hidden">
 
       {/* Soft layered light (Apple style depth) */}
       <motion.div

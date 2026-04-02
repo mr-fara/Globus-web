@@ -75,7 +75,7 @@ export default function EarningsGrid() {
       />
 
       {/* MAIN CONTAINER */}
-      <div className="relative max-w-6xl mx-auto rounded-[28px] bg-white/70 backdrop-blur-xl border border-white/40 shadow-[0_20px_60px_rgba(0,0,0,0.08)] px-4 py-8 sm:px-6 md:px-10 md:py-10">
+      <div className="relative max-w-7xl mx-auto rounded-[25px] bg-white/70 backdrop-blur-xl border border-white/40 shadow-[0_20px_60px_rgba(0,0,0,0.08)] px-4 py-8 sm:px-6 md:px-10 md:py-10">
 
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto">

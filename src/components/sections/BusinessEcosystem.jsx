@@ -277,11 +277,15 @@ export default function BusinessEcosystem() {
         {/* TIMELINE */}
         <div className="relative mt-16">
 
-          {/* LINE */}
+            {/* LINES */}
+          {/* Top line - always visible */}
           <div className="absolute left-[5%] right-[5%] top-7 h-[2px] bg-gray-200" />
 
+          {/* Bottom line - only for small devices */}
+          <div className="absolute left-[5%] right-[5%] top-[calc(60%+14px)] h-[2px] bg-gray-200 md:hidden" />
+
           {/* NODES */}
-          <div className="grid grid-cols-6 gap-4 md:gap-8 relative">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-8 relative">
             {nodes.map((node, i) => (
               <Node
                 key={i}
