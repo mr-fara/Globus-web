@@ -18,9 +18,9 @@ const items = [
     text: "Globus brings different participants of the business world into one connected network.",
     Desc: (
       <>
-        Manufacturers produce products.<br />
-        Partners distribute them.<br />
-        Entrepreneurs expand the network.<br /><br />
+        <b>Manufacturers:</b> produce products.<br />
+        <b>Partners:</b> distribute them.<br />
+        <b>Entrepreneurs:</b> expand the network.<br /><br />
         This structure creates a simple and organized flow of business activity.
       </>
     ),
@@ -37,34 +37,39 @@ const items = [
     text: "Within the Globus ecosystem, individuals can participate in various business activities such as:",
     Desc: (
       <>
-        Manufacturing.<br />
-        Distribution.<br />
-        Sales.<br />
-        Network development.<br />
-        Business collaboration
+        <b>Manufacturing</b>.<br />
+        <b>Distribution</b>.<br />
+        <b>Sales</b>.<br />
+        <b>Network development</b>.<br />
+        <b>Business collaboration</b>
       </>
     ),
   },
   {
     icon: UserPlus,
     title: "How to Join With Us",
-    text: "Be part of a growing network that connects innovators, partners, and entrepreneurs.",
+    text: "Be part of a growing network that connects innovators, partners, owners and entrepreneurs.",
     Desc: (
       <>
-        1. Contact Our Team<br />
+        <b>1. Contact Our Team</b><br />
         Reach out to us and express your interest in joining our ecosystem.<br /><br />
-        2. Book Your Interview<br />
+        <b>2. Book Your Interview</b><br />
         Our team will schedule a quick discussion to understand your goals and how you fit in.<br /><br />
-        3. Unlock Your Opportunity<br />
+        <b>3. Unlock Your Opportunity</b><br />
         Once approved, we’ll connect you with the right opportunities to grow and succeed.
       </>
     ),
   },
   {
-    icon: Target,
+  icon: Target,
     title: "Vision and Mission",
-    text: "Our Vision: To build a global ecosystem that connects talent, production, and business opportunities.",
-    Desc: "Our Mission: To support entrepreneurship and create sustainable business opportunities.",
+    text: "Explore how our vision and mission shape strategies, inspire growth, and guide our daily actions.",
+    Desc: (
+          <>
+          <b>Our Vision:</b> To build a global ecosystem that connects talent, production, and business opportunities.<br /><br />
+          <b>Our Mission:</b> To support entrepreneurship and create sustainable business opportunities.
+          </>
+          ),  
   },
 ];
 
@@ -83,8 +88,8 @@ function AccordionItem({ item, open, setOpen, index }) {
         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-white/10 via-transparent to-white/10 blur-xl pointer-events-none"></div>
 
         <div className="flex gap-4 relative z-10">
-          <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-black/80 text-white backdrop-blur-md shadow-md group-hover:scale-105 transition">
-            <Icon size={18} />
+          <div className="w-15 h-10 flex items-center justify-center rounded-xl bg-black/95 text-white backdrop-blur-md shadow-md group-hover:scale-105 transition">
+            <Icon size={20} />
           </div>
 
           <div>
@@ -137,15 +142,15 @@ export default function Intro() {
         <FadeIn>
           <div className="backdrop-blur-xl bg-white/70 border border-white/30 rounded-2xl shadow-lg p-5 md:p-6">
 
-            <h2 className="text-xl font-bold text-gray-900">
-              SIA SAHI
+            <h2 className="text-3xl font-bold text-gray-900">
+              Mr. SAHI
             </h2>
-            <p className="text-sm text-gray-500 mb-3">
+            <p className="text-xl font-bold text-gray-800 mb-3">
               Managing Director – Globus Sri Lanka
             </p>
 
             <p className="text-gray-600 text-sm leading-relaxed">
-              SIA SAHI is not just a business leader, but a visionary building a
+              Mr. SAHI is not just a business leader, but a visionary building a
               people-powered business ecosystem across Sri Lanka and beyond —
               creating opportunities for thousands to grow.
             </p>
@@ -153,7 +158,7 @@ export default function Intro() {
             {/* ROLES */}
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
 
-              <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border border-white/30">
+              <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border border-black/15">
                 <h4 className="font-semibold text-gray-900">
                   Managing Director - Globus Sri Lanka
                 </h4>
@@ -162,7 +167,7 @@ export default function Intro() {
                 </p>
               </div>
 
-              <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border border-white/30">
+              <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border border-black/15">
                 <h4 className="font-semibold text-gray-900">
                   Financial Advisor (Wealth & Growth Strategies)
                 </h4>
@@ -171,7 +176,7 @@ export default function Intro() {
                 </p>
               </div>
 
-              <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border border-white/30">
+              <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border border-black/15">
                 <h4 className="font-semibold text-gray-900">
                   Sales & Business Trainer (People Development Focus)
                 </h4>
@@ -180,7 +185,7 @@ export default function Intro() {
                 </p>
               </div>
 
-              <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border border-white/30">
+              <div className="bg-white/60 backdrop-blur-md p-4 rounded-xl border border-black/15">
                 <h4 className="font-semibold text-gray-900">
                   Cashflow Game Trainer (Financial Education)
                 </h4>
