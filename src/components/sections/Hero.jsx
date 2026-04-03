@@ -18,7 +18,7 @@ const Hero = () => {
     <section className="w-full flex justify-center px-4 py-18 md:py-18">
 
       <div
-        className="relative w-full max-w-[1320px] h-[420px] md:h-[620px] lg:h-[650px] rounded-[30px] overflow-hidden shadow-[0_30px_100px_rgba(0,0,0,0.25)] flex items-center"
+        className="relative w-full max-w-[1320px] h-[480px] md:h-[620px] lg:h-[650px] rounded-[30px] overflow-hidden shadow-[0_30px_100px_rgba(0,0,0,0.25)] flex items-center"
         style={{
           backgroundImage: "url('/image/background.jpg')",
           backgroundSize: "cover",
