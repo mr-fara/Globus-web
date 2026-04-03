@@ -202,22 +202,16 @@ export default function Intro() {
               className="w-full h-[240px] md:h-[420px] object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/20 to-transparent flex flex-col justify-center p-6">
-              <div className="gird grid-cols-2">
-                <h2 className="text-white text-2xl md:text-4xl font-bold">
+            <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/10 to-transparent flex flex-col justify-center p-6">
+              <h2 className="text-white text-3xl md:text-6xl font-bold">
                 Join the Globus
               </h2>
               <p className="text-gray-200 mt-2 text-sm md:text-base">
-                Build your future with us. Grow together and we will support you as an enterpreneur.
+                Build your future with us. Grow together.
               </p>
-
-              <button className="mt-4 w-fit px-5 py-2 rounded-full text-sm font-medium text-black bg-white">
+              <button className="mt-6 w-fit px-5 py-2 rounded-full text-sm font-medium text-black bg-white">
                 Become a Partner
               </button>
-              </div>
-              <div>
-
-              </div>
             </div>
           </div>
         </FadeIn>
