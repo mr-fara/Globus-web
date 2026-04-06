@@ -1,7 +1,7 @@
 export const PERSONAL_INFO = {
   name: "GLOBUS",
   email: "globusgroups@gmail.com",
-  location: "Kahatowita, Nittambuwa.",
+  location: "Colombo.",
   tagline: "Globus helps teams run communication workflows with structure, transparency, and speed. From outreach planning to daily execution, every step is visible in one clean operating surface. ",
   resume: "/images/resume.pdf",
 };

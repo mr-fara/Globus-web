@@ -1,42 +1,143 @@
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah Mitchell",
-    role: "CTO",
-    company: "TechStart Inc.",
+    name: "Mr. Isam ",
+    role: "IPad Achiever",
+    company: "",
     image: "/testimonials/person1.jpg",
     quote:
-      "Outstanding work on our React application. Alex delivered a high-performance, scalable solution that exceeded our expectations.",
+      "Being a partner in Globus helped me grow faster with the right support and opportunities.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Product Manager",
-    company: "Digital Innovations",
-    image: "/testimonials/person2.jpg",
+    name: "Mr. Farhath Zimal",
+    role: "lead Globus Software Unit",
+    company: "own a software agency.",
+    image: "/testimonials/person15.jpg",
     quote:
-      "Working with Alex was a game-changer for our project. The UI components were beautifully designed and easy to integrate.",
+      "Being a partner in Globus has helped me move closer to my future goal of building my own software agency at the age of 22 by giving me valuable support & opportunities.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
-    role: "Founder",
-    company: "StartupHub",
+    name: "Mr. Sajeewan",
+    role: "IPad Achiever",
+    company: "",
     image: "/testimonials/person3.jpg",
     quote:
-      "Alex transformed our vision into reality with a stunning, user-friendly interface. The project was delivered on time and beyond expectations.",
+      "Globus gave me a clear path to start my business. The ecosystem makes everything simple and connected.",
     rating: 5,
   },
   {
     id: 4,
-    name: "David Thompson",
-    role: "Lead Developer",
-    company: "WebSolutions Co.",
+    name: "Mr. Vajithan",
+    role: "Bike Achiever",
+    company: "",
     image: "/testimonials/person4.jpg",
     quote:
-      "Incredible expertise in React and modern web technologies. Alex not only built our application but also improved its overall architecture.",
+      "Globus is not just a platform, it’s a real business network where anyone can participate and succeed.",
     rating: 5,
   },
+  {
+    id: 5,
+    name: "Mr. Mahthee",
+    role: "IPad Achiever",
+    company: "",
+    image: "/testimonials/person5.jpg",
+    quote:
+      "The earning opportunities in Globus are flexible and easy to understand. Great for new entrepreneurs.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Mr. Mufassir",
+    role: "IPad Achiever",
+    company: "",
+    image: "/testimonials/person6.jpg",
+    quote:
+      "Through Globus, I found the right people and the right system to expand my business.",
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "Mr. Rilwan",
+    role: "Franchise Owner",
+    company: "Mini SuperMarket.",
+    image: "/testimonials/person7.jpg",
+    quote:
+      "Globus creates a strong community where growth, support, and success go hand in hand.",
+    rating: 5,
+  },
+    {
+    id: 8,
+    name: "Mr. Afzal ",
+    role: "IPad Achiever",
+    company: "",
+    image: "/testimonials/person8.jpg",
+    quote:
+      "Being a partner in Globus helped me grow faster with the right support and opportunities.",
+    rating: 5,
+  },
+  {
+    id: 9,
+    name: "Mr.  Sujanthan",
+    role: "IPad Achiever",
+    company: "",
+    image: "/testimonials/person9.jpg",
+    quote:
+      "I love how Globus connects manufacturers and entrepreneurs in one place. It’s powerful.",
+    rating: 5,
+  },
+  {
+    id: 10,
+    name: "Mr. Aleem ",
+    role: "Bike Achiever",
+    company: "",
+    image: "/testimonials/person10.jpg",
+    quote:
+      "Globus gave me a clear path to start my business. The ecosystem makes everything simple and connected.",
+    rating: 5,
+  },
+  {
+    id: 11,
+    name: "Mr. Sajeewan ",
+    role: "MacBook Achiever",
+    company: "",
+    image: "/testimonials/person11.jpg",
+    quote:
+      "Globus is not just a platform, it’s a real business network where anyone can participate and succeed.",
+    rating: 5,
+  },
+  {
+    id: 12,
+    name: "Mr. Nathasi",
+    role: "Bike Achiever",
+    company: "",
+    image: "/testimonials/person12.jpg",
+    quote:
+      "The earning opportunities in Globus are flexible and easy to understand. Great for new entrepreneurs.",
+    rating: 5,
+  },
+  {
+    id: 13,
+    name: "Mr. Mahthee",
+    role: "MacBook Achiever",
+    company: "",
+    image: "/testimonials/person2.jpg",
+    quote:
+      "Through Globus, I found the right people and the right system to expand my business.",
+    rating: 5,
+  },
+   {
+    id: 14,
+    name: "Mr. Nathasi",
+    role: "Royal spot salon franchise owner",
+    company: "",
+    image: "/testimonials/person14.jpg",
+    quote:
+      "Through Globus, I found the right people and the right system to expand my business.",
+    rating: 5,
+  },
+ 
 ];
