@@ -11,6 +11,7 @@ import VideoReferences from './components/sections/VideoReferences'
 import BusinessEcosystem from './components/sections/BusinessEcosystem'
 import Earnings from './components/sections/Earnings'
 
+
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
         <main>
         <Hero/>
         <About/>
+        
         <Earnings/>
         <BusinessEcosystem/>
         <Branches/>
