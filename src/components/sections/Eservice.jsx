@@ -12,7 +12,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const platformUrl = "https://your-eservices-site.com";
+const platformUrl = "https://d-creates.vercel.app/";
 
 const steps = [
   {
