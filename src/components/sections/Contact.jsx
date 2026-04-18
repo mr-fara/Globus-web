@@ -82,6 +82,7 @@ const Contact = () => {
                         id={field}
                         name={field}
                         value={formData[field]}
+
                         onChange={handleChange}
                         placeholder={field === 'email' ? 'your.email@example.com' : `Your ${field}`}
                         className="w-full px-4 py-3 bg-black/5 border border-black/10 rounded-xl text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"

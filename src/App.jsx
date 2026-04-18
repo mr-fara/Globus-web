@@ -11,6 +11,7 @@ import Footer from './components/sections/Footer'
 import BusinessEcosystem from './components/sections/BusinessEcosystem'
 import Earnings from './components/sections/Earnings'
 import AdvertisementBannerPage from './components/sections/AdvertisementBannerPage'
+import Eservice from './components/sections/Eservice'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <About/>
         <AdvertisementBannerPage/>
         <Earnings/>
+        <Eservice/>
         <BusinessEcosystem/>
         <Branches/>
         <Product/>
