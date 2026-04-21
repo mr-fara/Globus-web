@@ -46,7 +46,7 @@ const AdvertisementSlider = () => {
     <div className="w-full flex justify-center py-5 bg-gray-100">
 
       {/* OUTER CARD */}
-      <div className="relative w-[95%] md:w-[85%] h-[50vh] rounded-2xl overflow-hidden shadow-2xl bg-black">
+      <div className="relative w-[95%] md:w-[75%] h-[50vh] rounded-2xl overflow-hidden shadow-2xl bg-black">
 
         {/* SLIDES */}
         {banners.map((item, i) => (
