@@ -12,7 +12,7 @@ import BusinessEcosystem from './components/sections/BusinessEcosystem'
 import Earnings from './components/sections/Earnings'
 import AdvertisementBannerPage from './components/sections/AdvertisementBannerPage'
 import Eservice from './components/sections/Eservice'
-
+import CommunityServices from './components/sections/CommunityServices'
 
 function App() {
 
@@ -30,6 +30,7 @@ function App() {
         <Branches/>
         <Product/>
         <Intro/>
+        <CommunityServices/>
         <VideoReferences/>
         <Testimonials/>
         <Contact/>
